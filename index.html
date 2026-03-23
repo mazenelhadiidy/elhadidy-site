@@ -17,7 +17,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
-  align-items: center;
 }
 
 nav h2 {
@@ -26,41 +25,83 @@ nav h2 {
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-  text-align: center;
-  padding: 100px 20px;
+  padding: 100px 50px;
 }
 
 .hero h1 {
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 1.2;
 }
 
-.highlight {
+.green {
   color: #b6ff00;
 }
 
-.hero p {
-  margin-top: 20px;
-  color: #aaa;
+/* Animation */
+.hero h1 {
+  animation: fadeUp 1.5s ease;
 }
 
-/* Button */
-.btn {
-  margin-top: 30px;
-  display: inline-block;
-  background: #b6ff00;
-  color: black;
-  padding: 12px 25px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+/* Video */
+.video {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+video {
+  width: 80%;
+  border: 2px solid #b6ff00;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+  <h2>ELHADIDY</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>
+    PRECISION THAT <span class="green">HITS</span><br>
+    IMPACT THAT LASTS
+  </h1>
+</section>
+
+<div class="video">
+  <video autoplay muted loop controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</div>
+
+</body>
+</html>}
 </style>
 
 </head>
