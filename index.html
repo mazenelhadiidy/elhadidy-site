@@ -8,59 +8,86 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #000;
+  background: #0a0a0a;
   color: white;
 }
 
 /* Navbar */
 nav {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px;
-  font-weight: bold;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+nav h2 {
+  color: #b6ff00;
 }
 
 nav a {
   color: white;
+  margin: 0 10px;
   text-decoration: none;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 70px;
-  font-weight: 900;
-  line-height: 1.2;
+  font-size: 60px;
+  font-weight: bold;
 }
 
-.green {
-  color: #00ff88;
+.highlight {
+  color: #b6ff00;
 }
 
-/* Section */
-.section {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.section p {
-  color: #ccc;
-  max-width: 600px;
-  margin: auto;
+.hero p {
+  margin-top: 20px;
+  color: #aaa;
 }
 
 /* Button */
 .btn {
+  margin-top: 30px;
   display: inline-block;
-  margin-top: 20px;
-  background: #00ff88;
+  background: #b6ff00;
   color: black;
   padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+  <h2>ELHADIDY</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>
+    QUALITY THAT <span class="highlight">HITS</span><br>
+    TASTE THAT LASTS
+  </h1>
+
+  <p>Healthy Food - Chicken - Pizza</p>
+
+  <a href="#" class="btn">Order Now</a>
+</section>
+
+</body>
+</html>  padding: 12px 25px;
   text-decoration: none;
   font-weight: bold;
 }
